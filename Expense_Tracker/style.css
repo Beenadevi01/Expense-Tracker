@@ -1,0 +1,108 @@
+/* style.css */
+
+body{
+    text-align: center;
+    align-items: center;
+    display: flexbox;
+}
+.summary{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(222, 254, 255);
+}
+#updatedBal{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    font-size: larger;
+}
+.totalinc{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.totalinc>div { 
+    width: 200px; 
+} 
+.form{
+    margin-left: 36px;
+    font-weight: bolder;
+    font-size: large;
+}
+.form-control{
+    padding: 2%;
+    margin-left: 25%;
+}
+.root{
+    width:fit-content ;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+    padding-top: 1%;
+    text-align: center;
+    justify-content: center;
+    border-width: 6px;
+    border: 5px grey;
+    box-sizing: content-box;
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+}
+form{
+    font-size: 18px;
+    font-weight: 100;
+}
+.vertical{
+    color: rgb(65, 65, 67);
+    margin: 0 2%;
+    border-width: 2px;
+}
+#table { 
+    border-collapse: collapse; 
+    width: 50vw; 
+    border: 2px solid #ddd; 
+    font-size: 18px; 
+} 
+#table th,#table td{
+   text-align: left;
+   padding: 12px;
+}
+#table tr{
+    border-bottom: 1px solid #ddd;
+
+}
+#table tr.titles{
+ background-color: lightgreen;
+}
+.inputitem{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    font-size: large;
+    font-weight: bolder;
+    padding: 1%;
+}
+input,select,option{
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5px;
+}
+button{
+    font-size: large;
+    padding: 2%;
+    border-radius: 5px;
+}
+.zoom{
+    color:black;
+    transition: transform .2s;
+}
+.zoom:hover{
+    cursor: pointer;
+    transform:scale(1.23);
+    color: rgb(26, 191, 26);
+}

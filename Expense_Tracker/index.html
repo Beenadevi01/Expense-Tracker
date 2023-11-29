@@ -1,0 +1,113 @@
+<!-- index.html -->
+  
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" 
+          content="width=device-width,  
+                   initial-scale=1.0" /> 
+    <!-- style.css -->
+    <link rel="stylesheet" 
+          href="style.css" /> 
+    <!-- flatpickr.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Expense Tracker</title> 
+</head> 
+  
+<body> 
+    <div> 
+        <h1 style="color: green"> 
+        </h1> 
+        <h1 style="color:rgb(0, 0, 0)"><u>Expense Tracker</u></h2> 
+    </div> 
+    <div class="summary"> 
+        <div> 
+            <h2>✔Available Balance: 
+                <span id="updatedBal"> 
+                  </span> 
+            </h2> 
+        </div> 
+        <br> 
+        <div class="totalinc"> 
+            <div> 
+                <h4>Total Income:</h4> 
+                <div> 
+                    <h2 style="color: green;"
+                        id="updatedInc">
+                    </h2> 
+                </div> 
+            </div> 
+            <hr class="vertical" /> 
+            <div> 
+                <h4>Total Expenses:</h4>
+                <div> 
+                    <h2 style="color: red;" 
+                        id="updatedExp">
+                    </h2> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="root"> 
+        <div id="items"> 
+            <h2>Expenses</h2> 
+            <table id="table"> 
+                <tr class="titles"> 
+                    <th>S.no</th> 
+                    <th>Name</th> 
+                    <th>Amount</th> 
+                    <th>Type</th> 
+                    <th>Delete</th> 
+                </tr> 
+            </table> 
+        </div> 
+        <hr class="vertical" /> 
+        <div id="new"> 
+            <h2>Enter your Data</h2> 
+            <form class="form">
+             Date:
+            <input class="form-control" type="date" placeholder="Give date">
+            </form>
+            <div class="inputs"> 
+                <div class="inputitem"> 
+                    
+                    <p style="width: 10rem"> 
+                        Entry type: 
+                    </p> 
+                    <select id='itemType'> 
+                        <option value="0">Expense</option> 
+                        <option value="1">Income</option> 
+                    </select> 
+                </div> 
+                <div class="inputitem"> 
+                    <p style="width: 9rem">Name:</p> 
+                    <input id="name" 
+                           type="text"
+                           value="" 
+                           placeholder="name" /> 
+                </div> 
+                <div class="inputitem"> 
+                    <p style="width: 9rem">Amount:</p> 
+                    <input value="0" 
+                           id="amount"
+                           name="mod" 
+                           type="number" 
+                           placeholder="amount" /> 
+                </div> 
+            </div> 
+            <button onclick="addItem()"> 
+                Add Expense 
+            </button> 
+        </div> 
+    </div> 
+    <!--source.js-->
+    <script src="source.js"></script>
+    <!-- flatpickr.js --> 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+    flatpickr("input[class=date]", {});
+    </script>
+</body>  
+</html>
